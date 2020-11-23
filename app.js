@@ -17,10 +17,18 @@ var randomString = function (len, bits)
 };
 
 const startHash = randomString(36,32)
-
+const getTimeNow = () => {
+    const curdt = new Date().toISOString()
+    console.log(curdt +': '+randomHash)
+    //setTimeout(getTimeNow, 5000)
+  }
 
 // A sample route
 app.get('/', (req, res) => res.send(`Responding with ${randomString(36,32)}`))
 
+// A sample route
+app.get('/status', (req, res) => res.send(`Responding with ${getTimeNow}: ${randomString(36,32)}`))
+
+
 // Start the Express server
-app.listen(3000, () => console.log(`Server started with ${startHash}`))
+app.listen(3000, () => console.log(`Server started with ${getTimeNow}: ${startHash}`))
