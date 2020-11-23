@@ -27,8 +27,8 @@ const getTimeNow = () => {
 app.get('/', (req, res) => res.send(`Responding with ${randomString(36,32)}`))
 
 // A sample route
-app.get('/status', (req, res) => res.send(`Responding with ${getTimeNow}: ${randomString(36,32)}`))
+app.get('/status', (req, res) => res.send(`Responding with ${new Date().toISOString()}: ${randomString(36,32)}`))
 
 
 // Start the Express server
-app.listen(3000, () => console.log(`Server started with ${getTimeNow}: ${startHash}`))
+app.listen(3000, () => console.log(`Server started with ${new Date().toISOString()}: ${startHash}`))
