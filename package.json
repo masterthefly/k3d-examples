@@ -1,13 +1,16 @@
 {
-  "name": "exercise-1.01",
+  "name": "exercise-1.02",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Vishy K <viswanadhk@yahoo.com> (vishyk.com)",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
