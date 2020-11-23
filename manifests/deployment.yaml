@@ -14,4 +14,4 @@ spec:
     spec:
       containers:
         - name: vkapp1
-          image: vkasin/app1:102
+          image: vkasin/app1:105
